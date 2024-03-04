@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Service Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'all-color': '#FF3811',
+                        'p-all': '#737373',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class="max-w-5xl mx-auto">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-lg">
+                            <li><a class="hover:underline hover:text-all-color hover:underline-offset-8" href="">Home
+                                </a></li>
+                            <li><a class="hover:underline hover:text-all-color hover:underline-offset-8"
+                                    href="">About</a></li>
+                            <li><a class="hover:underline hover:text-all-color hover:underline-offset-8"
+                                    href="">Services</a></li>
+                            <li><a class="hover:underline hover:text-all-color hover:underline-offset-8"
+                                    href="">Blog</a></li>
+                            <li><a class="hover:underline hover:text-all-color hover:underline-offset-8"
+                                    href="">Contact</a></li>
+                        </ul>
+                    </div>
+                    <img class="w-14 md:w-16 lg:w-20 " src="logo.svg" alt="">
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="space-x-12 menu-horizontal text-lg font-semibold px-1">
+                        <li><a class="hover:underline hover:text-all-color hover:underline-offset-8" href="">Home </a>
+                        </li>
+                        <li><a class="hover:underline hover:text-all-color hover:underline-offset-8" href="">About</a>
+                        </li>
+                        <li><a class="hover:underline hover:text-all-color hover:underline-offset-8"
+                                href="">Services</a></li>
+                        <li><a class="hover:underline hover:text-all-color hover:underline-offset-8" href="">Blog</a>
+                        </li>
+                        <li><a class="hover:underline hover:text-all-color hover:underline-offset-8" href="">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="border px-2 md:px-4 py-2 rounded text-all-color font-semibold text-lg">Appointment</a>
+                </div>
+            </div>
+        </nav>
+        <section class="max-w-5xl mx-auto my-5 p-2">
+            <div class="relative flex flex-col lg:flex-row">
+                <img class="rounded-lg bg-gradient-to-r from-[#151515] to-[#15151500]"
+                    src="images/checkout/checkout.png" alt="">
+                <div class="absolute md:top-24 lg:top-28 top-6 left-6 md:left-20">
+                    <h2 class="md:text-3xl lg:text-[45px] font-bold text-white">Service Details</h2>
+                </div>
+                <div class="absolute bottom-0 left-16 md:left-72 lg:left-96">
+                    <button
+                        class="border bg-all-color rounded-tr-full rounded-tl-full  border-all-color px-4 md:py-2 md:px-8 text-xl font-medium text-white">Home/Service
+                        Details</button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="max-w-5xl mx-auto my-12 p-2">
+        <section>
+            <div class="flex flex-col md:flex-row md:space-x-4 lg:space-x-8">
+                <div class="md:w-2/3">
+                    <img class="lg:w-[752px] lg:h-[400px] rounded-lg" class="rounded-lg" src="images/banner/3.jpg"
+                        alt="">
+                </div>
+                <div class="bg-base-300 md:w-[300px] p-5 space-y-4">
+                    <h2 class="text-2xl font-bold">Services</h2>
+                    <div
+                        class="flex items-center hover:text-white rounded hover:bg-all-color border bg-white py-3 px-4 justify-between">
+                        <p class="text-base font-semibold">Full Car Repair</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div
+                        class="flex items-center hover:text-white rounded hover:bg-all-color border bg-white py-3 px-4 justify-between">
+                        <p class="text-base font-semibold">Engine Repair</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div
+                        class="flex items-center hover:text-white rounded hover:bg-all-color border bg-white py-3 px-4 justify-between">
+                        <p class="text-base font-semibold">Automatic Services</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div
+                        class="flex items-center hover:text-white rounded hover:bg-all-color border bg-white py-3 px-4 justify-between">
+                        <p class="text-base font-semibold">Engine Oil Change</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                    <div
+                        class="flex items-center hover:text-white rounded hover:bg-all-color border bg-white py-3 px-4 justify-between">
+                        <p class="text-base font-semibold">Battery Charge</p>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- part 1 -->
+        <section>
+            <div class="flex flex-col-reverse md:flex-row md:space-x-8 my-6">
+                <div class="md:w-2/3 space-y-3">
+                    <h2 class="text-4xl font-bold">Unique Car Engine Service</h2>
+                    <p class="text-p-all">There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered alteration in some form, by injected humour, or randomised words which
+                        don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need
+                        to be sure there isn't anything embarrassing hidden in the middle of text. </p>
+                </div>
+                <div class="border w-[300px] rounded-lg bg-black p-5 space-y-5">
+                    <h2 class="text-2xl font-bold text-white">Download</h2>
+                    <div class="flex items-center justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <path
+                                d="M24.375 17.8125V14.5312C24.375 13.4124 23.9305 12.3393 23.1394 11.5481C22.3482 10.757 21.2751 10.3125 20.1562 10.3125H18.2812C17.9083 10.3125 17.5506 10.1643 17.2869 9.90062C17.0232 9.6369 16.875 9.27921 16.875 8.90625V7.03125C16.875 5.91237 16.4305 4.83931 15.6394 4.04814C14.8482 3.25697 13.7751 2.8125 12.6562 2.8125H10.3125M11.25 20.625V21.5625M15 17.8125V21.5625M18.75 15V21.5625M13.125 2.8125H7.03125C6.255 2.8125 5.625 3.4425 5.625 4.21875V25.7812C5.625 26.5575 6.255 27.1875 7.03125 27.1875H22.9688C23.745 27.1875 24.375 26.5575 24.375 25.7812V14.0625C24.375 11.0788 23.1897 8.21733 21.08 6.10755C18.9702 3.99776 16.1087 2.8125 13.125 2.8125V2.8125Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <div class="-ml-20">
+                            <h6 class="text-white">Our Brochure</h6>
+                            <p class="text-[#A2A2A2]">Download</p>
+                        </div>
+                        <i
+                            class="fa-solid fa-arrow-right hover:text-white bg-all-color py-2 px-3 rounded text-white"></i>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                            <path
+                                d="M24.375 17.8125V14.5312C24.375 13.4124 23.9305 12.3393 23.1394 11.5481C22.3482 10.757 21.2751 10.3125 20.1562 10.3125H18.2812C17.9083 10.3125 17.5506 10.1643 17.2869 9.90062C17.0232 9.6369 16.875 9.27921 16.875 8.90625V7.03125C16.875 5.91237 16.4305 4.83931 15.6394 4.04814C14.8482 3.25697 13.7751 2.8125 12.6562 2.8125H10.3125M11.25 20.625V21.5625M15 17.8125V21.5625M18.75 15V21.5625M13.125 2.8125H7.03125C6.255 2.8125 5.625 3.4425 5.625 4.21875V25.7812C5.625 26.5575 6.255 27.1875 7.03125 27.1875H22.9688C23.745 27.1875 24.375 26.5575 24.375 25.7812V14.0625C24.375 11.0788 23.1897 8.21733 21.08 6.10755C18.9702 3.99776 16.1087 2.8125 13.125 2.8125V2.8125Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <div class="-ml-14">
+                            <h6 class="text-white">Company Details</h6>
+                            <p class="text-[#A2A2A2]">Download</p>
+                        </div>
+                        <i
+                            class="fa-solid fa-arrow-right hover:text-white bg-all-color py-2 px-3 rounded text-white"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- part 2 -->
+        <section>
+            <div class="flex flex-col md:flex-row gap-4 md:gap-8">
+                <div class="md:w-2/3 grid grid-cols-1 lg:grid-cols-2 gap-5">
+                    <div class="border-gray-100 border-2 border-t-[#FF3811] rounded-lg bg-gray-100 p-10 space-y-2">
+                        <h5 class="text-xl font-bold">Instant Car Services</h5>
+                        <p class="text-p-all">It uses a dictionary of over 200 Latin words, combined with a model
+                            sentence structures.</p>
+                    </div>
+                    <div class="border-gray-100 border-2 border-t-[#FF3811] rounded-lg bg-gray-100 p-10 space-y-2">
+                        <h5 class="text-xl font-bold">24/7 Quality Service</h5>
+                        <p class="text-p-all">It uses a dictionary of over 200 Latin words, combined with a model
+                            sentence structures.</p>
+                    </div>
+                    <div class="border-gray-100 border-2 border-t-[#FF3811] rounded-lg bg-gray-100 p-10 space-y-2">
+                        <h5 class="text-xl font-bold">Easy Customer Service</h5>
+                        <p class="text-p-all">It uses a dictionary of over 200 Latin words, combined with a model
+                            sentence structures.</p>
+                    </div>
+                    <div class="border-gray-100 border-2 border-t-[#FF3811] rounded-lg bg-gray-100 p-10 space-y-2">
+                        <h5 class="text-xl font-bold">Quality Cost Service</h5>
+                        <p class="text-p-all">It uses a dictionary of over 200 Latin words, combined with a model
+                            sentence structures.</p>
+                    </div>
+                </div>
+                <div class="border md:h-[420px] relative bg-black p-8 rounded text-center space-y-4">
+                    <img class="ml-16" src="logo.svg" alt="">
+                    <h6 class="text-xl font-bold text-white">Need Help? We Are Here
+                        <br>To Help You
+                    </h6>
+                    <div class="shadow-lg pb-8 pt-2 rounded space-y-2 bg-white">
+                        <h6 class="text-xl font-bold text-[#151515]"><span class="text-all-color">Car Doctor</span>
+                            Special</h6>
+                        <p class="text-base font-bold">Save up to <span class="text-all-color">60% off</span></p>
+                    </div>
+                    <div>
+                        <button
+                            class="text-lg absolute right-20 -mt-8 font-semibold bg-all-color py-2 px-4 rounded text-white">Get
+                            A Quote</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- part -->
+        <section>
+            <div class="md:w-2/3 md:pr-14 lg:pr-0 my-3">
+                <p class="text-p-all">There are many variations of passages of Lorem Ipsum available, but the majority
+                    have suffered alteration in some form, by injected humour, or randomised words which don't look even
+                    slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there
+                    isn't anything embarrassing hidden in the middle of text.
+            </div>
+        </section>
+        <!-- part 4 -->
+        <section>
+            <div class="flex flex-col md:flex-row gap-4 md:gap-8 my-6">
+                <div class="md:w-2/3 md:space-y-7">
+                    <h2 class="text-3xl lg:text-4xl font-bold">3 Simple Steps to Process</h2>
+                    <p class="text-p-all">There are many variations of passages of Lorem Ipsum available, but the
+                        majority have suffered alteration in some form, by injected humour, or randomised words which
+                        don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need
+                        to be sure there isn't anything embarrassing hidden in the middle of text</p>
+                </div>
+                <div class="md:space-y-8 space-y-4 md:mt-5">
+                    <h2 class="text-4xl font-bold">Price $250.00</h2>
+                    <button
+                        class="bg-all-color text-lg font-bold w-full md:w-[270px] lg:w-[300px] py-2 text-white rounded">Proceed
+                        Checkout</button>
+                </div>
+            </div>
+        </section>
+        <!-- part 5 -->
+        <section>
+            <div class="md:w-2/3">
+                <div class="flex flex-col md:flex-row items-center text-center md:space-x-4 md:space-y-0 space-y-2">
+                    <div class="shrink-0 space-y-2 p-10 rounded-lg border w-[215px] h-[255px]">
+                        <svg class="ml-6" xmlns="http://www.w3.org/2000/svg" width="83" height="83" viewBox="0 0 83 83"
+                            fill="none">
+                            <circle cx="41.5" cy="41.5" r="41.5" fill="#FF3811" fill-opacity="0.1" />
+                            <circle cx="41.5" cy="41.5" r="27.9795" fill="#FF3811" />
+                        </svg>
+                        <div class="relative">
+                            <h4 class="absolute left-14 -top-16 text-white text-xl font-bold">01</h4>
+                        </div>
+                        <h3 class="text-xl font-bold">Step One</h3>
+                        <p class="text-p-all">It uses a dictionary of over 200 .</p>
+                    </div>
+                    <div class="shrink-0 space-y-2 p-10 rounded-lg border w-[215px] h-[255px]">
+                        <svg class="ml-6" xmlns="http://www.w3.org/2000/svg" width="83" height="83" viewBox="0 0 83 83"
+                            fill="none">
+                            <circle cx="41.5" cy="41.5" r="41.5" fill="#FF3811" fill-opacity="0.1" />
+                            <circle cx="41.5" cy="41.5" r="27.9795" fill="#FF3811" />
+                        </svg>
+                        <div class="relative">
+                            <h4 class="absolute left-14 -top-16 text-white text-xl font-bold">02</h4>
+                        </div>
+                        <h3 class="text-xl font-bold">Step Two</h3>
+                        <p class="text-p-all">It uses a dictionary of over 200 .</p>
+                    </div>
+                    <div class="shrink-0 space-y-2 p-10 rounded-lg border w-[215px] h-[255px]">
+                        <svg class="ml-6" xmlns="http://www.w3.org/2000/svg" width="83" height="83" viewBox="0 0 83 83"
+                            fill="none">
+                            <circle cx="41.5" cy="41.5" r="41.5" fill="#FF3811" fill-opacity="0.1" />
+                            <circle cx="41.5" cy="41.5" r="27.9795" fill="#FF3811" />
+                        </svg>
+                        <div class="relative">
+                            <h4 class="absolute left-14 -top-16 text-white text-xl font-bold">03</h4>
+                        </div>
+                        <h3 class="text-xl font-bold">Step Three</h3>
+                        <p class="text-p-all">It uses a dictionary of over 200 .</p>
+                    </div>
+                </div>
+                <div class="my-4">
+                    <img class="rounded-lg" src="images/banner/2.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- part 6 -->
+    </main>
+    <footer class="mx-auto footer p-10 bg-black">
+        <div class="space-y-3">
+            <img src="logo.svg" alt="">
+            <p class="text-white">Edwin Diaz is a software and we <br> technologies engineer, a life coach <br> trainer
+                who is also a serial .</p>
+            <div class="text-white text-2xl space-x-2">
+                <i class="fa-brands fa-google"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </div>
+        <nav>
+            <h6 class="text-white">Services</h6>
+            <a class="text-p-all footer-title link link-hover hover:underline-offset-8 hover:text-all-color">Home</a>
+            <a class="link text-p-all link-hover hover:underline-offset-8 hover:text-all-color">Service</a>
+            <a class="link text-p-all link-hover hover:underline-offset-8 hover:text-all-color">Contact</a>
+        </nav>
+        <nav>
+            <h6 class="text-white">Company</h6>
+            <a class="link text-p-all link-hover hover:underline-offset-8 hover:text-all-color">Why Car Doctor About</a>
+            <a class="link text-p-all link-hover hover:underline-offset-8 hover:text-all-color">Contact</a>
+            <a class="link text-p-all link-hover hover:underline-offset-8 hover:text-all-color">Jobs</a>
+            <a class="link text-p-all link-hover hover:underline-offset-8 hover:text-all-color">Press kit</a>
+        </nav>
+        <nav>
+            <h6 class="text-white">Legal</h6>
+            <a class="link text-p-all link-hover hover:underline-offset-8 hover:text-all-color">Support Center</a>
+            <a class="link text-p-all link-hover hover:underline-offset-8 hover:text-all-color">Feedback</a>
+            <a class="link text-p-all link-hover hover:underline-offset-8 hover:text-all-color">Accesbility</a>
+        </nav>
+    </footer>
+</body>
+
+</html>
